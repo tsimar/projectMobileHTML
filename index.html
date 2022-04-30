@@ -9,26 +9,34 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <div>
-      <header>
-        <nav>
-          <p class="head-nav-p">nazwa firmy</p>
-        </nav>
-        <section class="head-sect">
-          <h1 class="head-h1">
-            Nasza firma oferuje najwyższej jakości produkty.
-          </h1>
-          <p class="head-p">Nie wierz nam na słowo - sprawdż</p>
-          <button class="head-btn">oferta</button>
-        </section>
-      </header>
-      <main>
-        <section class="main-sect-specialist">
-          <h1 class="main-sect-specialist-h1">Nasi specjaliści</h1>
+    <!-- <div class="body-background">
+      <div class="body-div"> -->
+    <nav>
+      <div class="nav-div container">
+        <p class="head-nav-p">web driver</p>
+        <div class="nav-div-link">
+          <a class="link-us" href="#work">oferta</a>
+          <a class="link-us" href="#section-us">o nas</a>
+        </div>
+      </div>
+    </nav>
+    <header class="head-sect">
+      <div class="container">
+        <h1 class="head-h1">Nasza firma pomorzet wejść do swijatu IT.</h1>
+        <p class="head-p">Nie wierz nam na słowo - sprawdż</p>
+        <button class="head-btn">
+          <a href="#work"> oferta</a>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="section-us" class="main-sect-specialist container">
+        <h1 class="main-sect-specialist-h1">Nasi specjaliści</h1>
+        <div class="main-sect-specialist-text1">
           <div class="main-sect-specialist-circle1"></div>
-          <div class="main-sect-specialist-text1">
-            <h4>Imię Nazwisko [dział]</h4>
-            <p>
+          <div class="main-sect-specialist-text1-div">
+            <h4>Jon Kelli [SCRUM-menedger]</h4>
+            <p class="main-sect-specialist-text1-div-p">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
               officia nam eum modi nulla amet laborum neque praesentium omnis
               cupiditate placeat hic quo ut corporis repudiandae sequi
@@ -37,10 +45,12 @@
               totam dicta.
             </p>
           </div>
+        </div>
+        <div class="main-sect-specialist-text1">
           <div class="main-sect-specialist-circle2"></div>
-          <div class="main-sect-specialist-text1">
-            <h4>Imię Nazwisko [ dział ]</h4>
-            <p class="main-sect-specialist-text1-p">
+          <div class="main-sect-specialist-text1-div">
+            <h4>Michal Zawodski [ React.js - senior ]</h4>
+            <p class="main-sect-specialist-text2-div-p">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Reprehenderit possimus dolorum consectetur voluptate eaque, illo
               molestiae officiis? Nisi sint velit beatae, quas debitis quis modi
@@ -50,24 +60,36 @@
               consequuntur.
             </p>
           </div>
-        </section>
-        <section class="main-sect-work">
+        </div>
+      </section>
+      <section id="work" class="main-sect-work">
+        <div class="main-sect-work-div container">
           <h2 class="main-sect-work-h2">Czym zajmuje się nasza firma?</h2>
-          <div class="main-sect-work-service1">
+          <div class="main-sect-work-service1 service-with">
             <h3>Usługa 1</h3>
             <p class="main-sect-work-service1-p">(nowość)</p>
             <div class="main-sect-work-service1-circle"></div>
           </div>
-          <div class="main-sect-work-service2">
+          <div class="main-sect-work-service2 service-with">
             <h3>Usługa 2</h3>
           </div>
-          <div class="main-sect-work-service3"><h3>Usługa 3</h3></div>
-          <div class="main-sect-work-service4"><h3>Usługa 4</h3></div>
-          <div class="main-sect-work-service5"><h3>Usługa 5</h3></div>
-          <div class="main-sect-work-service6"><h3>Usługa 6</h3></div>
-        </section>
-      </main>
-      <footer>
+          <div class="main-sect-work-service3 service-with">
+            <h3>Usługa 3</h3>
+          </div>
+          <div class="main-sect-work-service4 service-with">
+            <h3>Usługa 4</h3>
+          </div>
+          <div class="main-sect-work-service5 service-with">
+            <h3>Usługa 5</h3>
+          </div>
+          <div class="main-sect-work-service6 service-with">
+            <h3>Usługa 6</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-section container">
         <p class="footer-p">Nazwa firmy - wszelkie prawa zastrzeżone, 2019</p>
         <div class="footer-div">
           <img src="https://img.icons8.com/ffffff/31/instagram-new--v1.png" />
@@ -76,8 +98,9 @@
             src="https://img.icons8.com/ffffff/31/facebook.png"
           />
         </div>
-      </footer>
-    </div>
+      </section>
+    </footer>
+    <!-- </div>
+    </div> -->
   </body>
 </html>
-

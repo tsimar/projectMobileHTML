@@ -12,28 +12,49 @@
   --background-main-sect-work: #405d78;
   --color-main-sect-work: white;
   --background-main-sect-work-service: #f1f1f1;
-  --color-main-sect-work-service: black;
+  --color-main-sect-work-service: white;
   --background-main-sect-work-service1-circle-befor: #e07a64;
   --background-footer: #4e4e4e;
   --color-footer: white;
   --color-icon-instagram: white;
+  --nav-height: 50px;
 }
 
 * {
   font-family: "Roboto";
-}
-body {
-  display: flex;
   font-size: 18px;
-  font-family: "Roboto";
-}
-body > div,
-nav {
-  width: 441px;
-  margin: 0 auto;
 }
 
-header {
+nav {
+  width: 100%;
+  background-color: var(--background-color-nav);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.nav-div {
+  margin: auto;
+}
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2em;
+  line-height: 42.19px;
+}
+.head-sect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: url(https://langero.com/wp-content/uploads/2019/08/forest-547363_1920.jpg)
+    no-repeat;
+  background-size: cover;
+  color: var(--color-header);
+  height: calc(100vh - var(--nav-height));
+}
+
+.section-header {
   display: flex;
   background-image: url(https://langero.com/wp-content/uploads/2019/08/forest-547363_1920.jpg);
   background-size: cover;
@@ -50,38 +71,19 @@ nav {
   color: var(--color-nav);
   height: 50px;
 }
+.nav-div-link {
+  display: none;
+}
 .head-nav-p {
   font-style: normal;
   font-weight: 700;
   margin-top: auto;
   margin-bottom: auto;
+  width: 30%;
 }
-.head-sect {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 100%;
-}
-.head-nav-p,
-.head-h1,
-.head-p,
-.head-btn,
-.main-sect-h1 {
-  margin-left: 14px;
-}
-
-h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2em;
-  line-height: 42.19px;
-}
-
 .head-h1 {
-  width: 359px;
+  width: 70%;
 }
-
 .head-p {
   margin-bottom: 41.53px;
   margin-top: 30px;
@@ -95,42 +97,48 @@ h1 {
   height: 41.4px;
   font-size: 1em;
 }
-
-.main-sect-specialist-h1 {
-  margin: 34px auto 0;
-  text-align: center;
+a {
+  color: var(--color-header);
+}
+main {
+  background-color: #dfb4aa;
 }
 .main-sect-specialist {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+}
+.main-sect-specialist-h1 {
+  margin-top: 34px;
+  text-align: center;
 }
 .main-sect-specialist-circle1,
 .main-sect-specialist-circle2 {
   height: 197px;
   width: 197px;
-  background-color: var(--color-circle-first);
+  background: url(../img/pexels-pixabay-220453.jpg) no-repeat center center;
   border-radius: 100%;
   margin: 54px auto 42px;
+  background-size: cover;
 }
 .main-sect-specialist-circle2 {
-  background-color: var(--color-circle-second);
+  background: url(../img/pexels-chloe-1043473.jpg) no-repeat center center;
+  background-size: cover;
 }
 .main-sect-specialist-text1,
 .main-sect-specialist-text2 {
-  margin: 0 auto;
   text-align: justify;
-  width: 413px;
   line-height: 21.09px;
+  justify-content: space-between;
 }
+
 h4 {
   font-weight: bold;
-
   margin-bottom: 20px;
 }
-.main-sect-specialist-text1-p {
+
+.main-sect-specialist-text2-div-p {
   margin-bottom: 54px;
+  padding: 0 auto;
 }
 .main-sect-work {
   display: flex;
@@ -140,7 +148,6 @@ h4 {
   row-gap: 34px;
   background: var(--background-main-sect-work);
   background-size: cover;
-  height: 2408px;
   color: var(--color-main-sect-work);
   margin: 0 auto;
 }
@@ -159,6 +166,7 @@ h3 {
 }
 h3 {
   font-size: 1.34em;
+  text-shadow: 0 0 25px rgb(187, 27, 27);
 }
 .main-sect-work-service1-p {
   margin: 0;
@@ -184,7 +192,33 @@ h3 {
 .main-sect-work-service6 {
   margin-bottom: 45px;
 }
+.main-sect-work-service1 {
+  background: url(../img/alberta-ga29b2d4d8_640.jpg) center center no-repeat;
+  background-size: cover;
+}
 
+.main-sect-work-service2 {
+  background: url(../img/art-g2d447c8f6_640.jpg) center center no-repeat;
+  background-size: cover;
+  color: #4e4e4e;
+}
+.main-sect-work-service3 {
+  background: url(../img/cave-of-wonder-and-lights.jpg) center center no-repeat;
+  background-size: cover;
+}
+.main-sect-work-service4 {
+  background: url(../img/dolomites-g4db6a4d13_640.jpg) center center no-repeat;
+  background-size: cover;
+}
+.main-sect-work-service5 {
+  background: url(../img/nature-ge79dae5e3_640.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+.main-sect-work-service6 {
+  background: url(../img/caucasus-gd04d2ba4d_640.jpg) center center no-repeat;
+  background-size: cover;
+}
 .main-sect-work-service1-circle::before {
   content: "";
   position: absolute;
@@ -197,16 +231,21 @@ h3 {
   transform: translate(-50%, -50%);
 }
 footer {
+  background-color: var(--background-footer);
+  color: var(--color-footer);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--background-footer);
-  color: var(--color-footer);
-  height: 147px;
+}
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
 }
 .footer-p {
-  margin-top: 38;
   font-weight: bold;
   line-height: 21px;
 }
@@ -215,4 +254,104 @@ footer {
 }
 img + img {
   margin-left: 18px;
+}
+/* .body-background {
+  width: 100vw;
+  height: 100vh;
+} */
+@media screen and (min-width: 760px) {
+  .container {
+    font-size: 20px;
+  }
+  .nav-div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .nav-div-link {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 30%;
+    margin: auto 0;
+  }
+  .service-with {
+    width: 270px;
+    height: 270px;
+    margin: 0;
+  }
+  .main-sect-work-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    gap: 30px;
+  }
+  .main-sect-work-h2 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-section {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  button:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+  }
+  button:hover a {
+    color: black;
+    transition: 1s;
+  }
+  .link-us:hover {
+    transform: perspective(200px) scale3d(1.5, 1.5, 1.5) rotateZ(5deg);
+    transition: 1s;
+  }
+}
+@media screen and (min-width: 960px) {
+  .container {
+    width: calc(960px - 60px);
+  }
+  .service-with {
+    width: 270px;
+    height: 270px;
+  }
+  .main-sect-work-div {
+    justify-content: space-between;
+  }
+  .main-sect-specialist-h1 {
+    align-self: flex-start;
+    margin-top: 51px;
+  }
+
+  .main-sect-specialist-text1 {
+    display: flex;
+    margin: 51px 0 78px 0;
+  }
+
+  .main-sect-specialist-text1:nth-of-type(odd) {
+    gap: 60px;
+  }
+
+  .main-sect-specialist-text1:nth-of-type(even) {
+    flex-direction: row-reverse;
+    gap: 60px;
+  }
+  .main-sect-specialist-circle1,
+  .main-sect-specialist-circle2 {
+    margin: 0;
+  }
+
+  .main-sect-specialist-text1-div {
+    width: 70%;
+  }
+
+  .main-sect-work {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
