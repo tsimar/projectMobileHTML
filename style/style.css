@@ -255,10 +255,6 @@ footer {
 img + img {
   margin-left: 18px;
 }
-/* .body-background {
-  width: 100vw;
-  height: 100vh;
-} */
 @media screen and (min-width: 760px) {
   .container {
     font-size: 20px;
@@ -307,8 +303,7 @@ img + img {
     transition: 1s;
   }
   .link-us:hover {
-    transform: perspective(200px) scale3d(1.5, 1.5, 1.5) rotateZ(5deg);
-    transition: 1s;
+    transform: scale(1.05);
   }
 }
 @media screen and (min-width: 960px) {
@@ -318,6 +313,7 @@ img + img {
   .service-with {
     width: 270px;
     height: 270px;
+    transition-duration: 0.5s;
   }
   .main-sect-work-div {
     justify-content: space-between;
@@ -353,5 +349,9 @@ img + img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+  }
+
+  .service-with:hover {
+    transform: scale(1.05);
   }
 }
